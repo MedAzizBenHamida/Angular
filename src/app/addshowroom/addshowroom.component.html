@@ -1,0 +1,24 @@
+<p>Formulaire Showroom !</p>
+<div class="container">
+  <form [formGroup]="formShowroom">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Matricule:</span>
+      </div>
+      <input type="text" class="form-control" formControlName="matricule" />
+    </div>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Nom:</span>
+      </div>
+      <input type="text" class="form-control" formControlName="nom" />
+    </div>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Status:</span>
+      </div>
+    </div>
+    <br />
+    <input type="submit" class="btn btn-primary" (click)="add()" />
+  </form>
+</div>
